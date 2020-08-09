@@ -10,15 +10,15 @@ An online Shopping Mall which contain following functionalities:
 3. Placeorder
 
 ### 1. Dashboard
-This page shows different items along with its price and a addtocart buttun. In nav-var theres the company name and cart link.
+>This page shows different items along with its price and a addtocart buttun. In nav-var theres the company name and cart link.
 ![](./ss/dashboard.png)
 
 ### 2. AddtoCart:
-This page shows number of items in the cart to place order.
+>This page shows number of items in the cart to place order.
 ![](./ss/AddtoCart.png)
 
 ### 3. Placeorder:
-This page asks for customer information and order summary.
+>This page asks for customer information and order summary.
 ![](./ss/placeorder.png)
 
 ## Special Implementation
