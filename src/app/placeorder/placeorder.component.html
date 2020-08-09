@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 39%;">
+        <a class="navbar-brand" href="#"><img src="./../../assets/head.png"/></a>
+      </div>
+    </div>
+</nav>
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+            <div class="card-header">Fill up the form to place order</div>
+            <div class="card-body">
+                <div class="container-fluid">
+
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" #name class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" #mail class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number:</td>
+                            <td><input type="tel"  #mob class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="btn btn-info" (click)="Addtoplace(name.value,mail.value,mob.value)">Submit</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">Order Summary</div>
+            <div class="card-body">
+                You have Total {{len}} number of items in your order.
+                <table class="table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of cart">
+                            <td>{{p.name}}</td>
+                            <td>Rs.{{p.price}}</td>
+                        </tr>
+                        <tr>
+                            <th>Total</th>
+                            <th>Rs{{total}}</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div id="placed" class="bottom">
+<img src="https://image.shutterstock.com/image-vector/congrats-congratulations-banner-glitter-decoration-260nw-1096037438.jpg">
+</div>
+
