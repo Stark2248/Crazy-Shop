@@ -11,7 +11,7 @@ An online Shopping Mall which contain following functionalities:
 
 ### 1. Dashboard
 This page shows different items along with its price and a addtocart buttun.
-![dashboard](https://drive.google.com/file/d/1vNEGAfZAdfouIqEM3nladOJiDFqghp_E/view?usp=sharing)
+![](./ss/dashboard.png)
 
 ## Development server
 
