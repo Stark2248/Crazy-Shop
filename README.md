@@ -4,6 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
+An online Shopping Mall which contain following functionalities:
+1. Dashboard
+2. AddtoCart
+3. Placeorder
+
+### 1. Dashboard
+This page shows different items along with its price and a addtocart buttun.
+![dashboard](https://drive.google.com/file/d/1vNEGAfZAdfouIqEM3nladOJiDFqghp_E/view?usp=sharing)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
