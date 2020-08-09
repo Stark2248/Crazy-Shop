@@ -23,7 +23,7 @@ An online Shopping Mall which contain following functionalities:
 
 ## Special Implementation
 
-Some of the things i learned:
+Techstack:
 1. Angular 9
 2. Firebase Console
 3. How to add firebase features in angular.
