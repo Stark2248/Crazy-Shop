@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-header" style="padding-left: 39%;">
+        <a class="navbar-brand" href="#">Welcome to Admin Page of Crazy-Shop</a>
+      </div>
+    </div>
+</nav>
+
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closepop()">&times;</span>
+    <form>
+      <div class="form-group">
+        <label for="name">name:</label>
+        <input #name name="name" type="text" class="form-control" placeholder="Enter name of the product" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="price">price:</label>
+        <input #price name="price" type="text" class="form-control" placeholder="Enter price of the product" id="price" onkeypress="return (event.charCode !=8 && event.charCode ==0 || ( event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)))">
+      </div>
+      <div class="form-group">
+        <label for="price">image:</label>
+        <input name="image" type="file" class="form-control" id="image" accept=".png,.jpg,.jpeg" (change)="upload($event)" />
+      </div>
+      <button class="btn" style="background-color: lightblue;" (click)="add(name.value,price.value)" >Add</button>
+    </form>
+  </div>
+</div>
+
+
+
+<button class="btn btn-primary" style="margin-top: 10px;" (click)="addpop()">add an item</button>
+
+
+<table class="table table-hover" style="margin-top: 10px;">
+  <thead style="background-color:gray">
+    <th>Name</th>
+    <th>Price</th>
+    <th>Op</th>
+  </thead>
+  <tbody *ngFor="let p of products" style="background-color: lightgrey;">
+      <tr>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td><input #key type="hidden" value="{{p.key}}"/><button class="btn" (click)="delete(key.value)"><img src="./../../assets/del.jpg"/></button></td>
+      </tr>
+  </tbody>
+</table>
+
+
