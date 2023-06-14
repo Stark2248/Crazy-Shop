@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   firebase: {
-    apiKey: 'AIzaSyDd0cZ0UeJOaz6OzqmLPJSfI1SjyXjbV1k',
+    apiKey: '<api key>',
     authDomain: 'crazy-shop-22944.firebaseapp.com',
     databaseURL: 'https://crazy-shop-22944.firebaseio.com',
     projectId: 'crazy-shop-22944',
